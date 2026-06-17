@@ -32,9 +32,9 @@ export const siteConfig = {
   url: "https://from-surviving-to-healing.vercel.app",
 
   // === META ===
-  title: "From Surviving to Healing — Perjalanan Bangkit dari GERD & Gastritis",
+  title: "From Surviving to Healing — Perjalanan Memutarbalikkan GERD & Gastritis",
   description:
-    "Catatan jujur perjalanan nyata bangkit dari GERD, gastritis, dan colitis yang datang bersamaan. Sebuah peta first-aid untuk kamu yang lelah mencari arah. Bukan janji sembuh instan.",
+    "Catatan jujur perjalanan nyata memutarbalikkan GERD, gastritis, dan colitis yang datang bersamaan. Sebuah peta first-aid untuk kamu yang lelah mencari arah. Bukan janji sembuh instan.",
 };
 
 export type SiteConfig = typeof siteConfig;
