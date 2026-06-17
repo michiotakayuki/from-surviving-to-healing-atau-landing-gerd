@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+
+  ::selection {
+    background-color: rgba(184, 92, 56, 0.18);
+    color: #1a1613;
+  }
+
+  /* Focus visibility for accessibility */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid theme("colors.accent.DEFAULT");
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.16em] text-accent;
+  }
+
+  .h-display {
+    @apply font-display font-light tracking-tightest text-ink;
+    text-wrap: balance;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-4 text-[15px] font-semibold text-white shadow-glow transition-all duration-300 hover:bg-accent-hover hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-surface px-7 py-4 text-[15px] font-semibold text-ink transition-all duration-300 hover:border-ink/20 hover:-translate-y-0.5;
+  }
+
+  .card {
+    @apply rounded-3xl border border-line bg-surface p-7 shadow-soft;
+  }
+
+  .hairline {
+    @apply h-px w-full bg-line;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .grain {
+    background-image: radial-gradient(
+      rgba(26, 22, 19, 0.035) 1px,
+      transparent 1px
+    );
+    background-size: 4px 4px;
+  }
+  .gradient-warm {
+    background:
+      radial-gradient(
+        120% 120% at 50% 0%,
+        rgba(244, 235, 228, 0.9) 0%,
+        rgba(251, 250, 248, 0) 60%
+      );
+  }
+}
+
+/* Reduced-motion respect */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
