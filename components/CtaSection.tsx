@@ -45,11 +45,14 @@ export default function CtaSection() {
               </ul>
 
               <div className="mt-10 flex flex-col items-center gap-4">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-accent">
+                  {siteConfig.priceBadge} · {siteConfig.priceSave}
+                </span>
                 <div className="flex items-baseline gap-3">
-                  <span className="font-display text-[40px] font-light text-paper">
+                  <span className="font-display text-[44px] font-light text-paper">
                     {siteConfig.price}
                   </span>
-                  <span className="text-[17px] text-paper/40 line-through">
+                  <span className="text-[18px] text-paper/40 line-through">
                     {siteConfig.priceStrike}
                   </span>
                 </div>

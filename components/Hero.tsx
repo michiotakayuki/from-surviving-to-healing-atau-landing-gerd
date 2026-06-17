@@ -32,32 +32,39 @@ export default function Hero() {
 
           <Reveal delay={120}>
             <p className="mt-6 max-w-prose text-[17px] leading-relaxed text-ink-soft">
-              Catatan jujur tentang perjalanan memutarbalikkan GERD, gastritis, dan
+              Catatan jujur tentang perjalanan bangkit dari GERD, gastritis, dan
               colitis yang datang bersamaan &mdash; untuk kamu yang sudah lelah
               mencari arah.
             </p>
           </Reveal>
 
           <Reveal delay={180}>
-            <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+            <div className="mt-8 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
               <CtaButton href={siteConfig.checkoutUrl}>
                 Mulai Baca Perjalanannya
               </CtaButton>
-              <div className="flex items-baseline gap-2">
-                <span className="font-display text-[22px] text-ink">
-                  {siteConfig.price}
+              <div className="flex flex-col gap-1">
+                <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-accent-soft px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-accent">
+                  {siteConfig.priceBadge}
                 </span>
-                <span className="text-[15px] text-muted line-through">
-                  {siteConfig.priceStrike}
-                </span>
+                <div className="flex items-baseline gap-2">
+                  <span className="font-display text-[26px] text-ink">
+                    {siteConfig.price}
+                  </span>
+                  <span className="text-[15px] text-muted line-through">
+                    {siteConfig.priceStrike}
+                  </span>
+                  <span className="text-[13px] font-medium text-sage">
+                    {siteConfig.priceSave}
+                  </span>
+                </div>
               </div>
             </div>
           </Reveal>
 
           <Reveal delay={240}>
-            <p className="mt-4 text-[13px] text-muted">
-              Bukan janji sembuh instan. Ini peta perjalanan nyata, selangkah demi
-              selangkah.
+            <p className="mt-4 max-w-prose text-[13px] leading-relaxed text-muted">
+              {siteConfig.priceNote}
             </p>
           </Reveal>
 
