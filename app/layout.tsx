@@ -14,7 +14,7 @@ const fraunces = Fraunces({
   variable: "--font-fraunces",
   display: "swap",
   weight: ["300", "400", "500"],
-  axes: ["opsz"],
+ 
 });
 
 export const viewport: Viewport = {
