@@ -14,7 +14,7 @@ export const siteConfig = {
   checkoutUrlAddon: "#",
 
   // === IDENTITAS ===
-  productName: "From Surviving to Healing",
+  productName: "Saat GERD, Gastritis, dan Colitis Datang Bersamaan",
   authorName: "Rovie",
   brandName: "From Surviving to Healing",
 
@@ -32,9 +32,10 @@ export const siteConfig = {
   url: "https://from-surviving-to-healing.vercel.app",
 
   // === META ===
-  title: "From Surviving to Healing — Perjalanan Memutarbalikkan GERD & Gastritis",
+  title:
+    "Saat GERD, Gastritis, dan Colitis Datang Bersamaan — Perjalanan Pulih Setelah Berbulan-Bulan Mencari Jawaban",
   description:
-    "Catatan jujur perjalanan nyata memutarbalikkan GERD, gastritis, dan colitis yang datang bersamaan. Sebuah peta first-aid untuk kamu yang lelah mencari arah. Bukan janji sembuh instan.",
+    "Cerita jujur perjalanan pulih setelah berbulan-bulan mencari jawaban, saat GERD, gastritis, dan colitis datang bersamaan. Sebuah peta first-aid untuk kamu yang lelah mencari arah. Bukan janji sembuh instan.",
 };
 
 export type SiteConfig = typeof siteConfig;
