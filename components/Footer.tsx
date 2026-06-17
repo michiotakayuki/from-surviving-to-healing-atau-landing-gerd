@@ -17,8 +17,9 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 text-[14px] leading-relaxed text-muted">
-              Sebuah ebook pengalaman pribadi tentang perjalanan memutarbalikkan
-              GERD, gastritis, dan colitis. Ditulis oleh {siteConfig.authorName}.
+              Sebuah ebook pengalaman pribadi tentang perjalanan pulih saat GERD,
+              gastritis, dan colitis datang bersamaan. Ditulis oleh{" "}
+              {siteConfig.authorName}.
             </p>
           </div>
 

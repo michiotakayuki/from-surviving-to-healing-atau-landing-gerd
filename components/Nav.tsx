@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { siteConfig } from "@/lib/config";
 import { Leaf } from "./icons";
 
 const links = [
@@ -50,15 +49,6 @@ export default function Nav() {
             </a>
           ))}
         </div>
-
-        <a
-          href={siteConfig.checkoutUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden rounded-full bg-ink px-5 py-2.5 text-[14px] font-semibold text-paper transition-all duration-300 hover:bg-ink-soft md:inline-flex"
-        >
-          Dapatkan Buku
-        </a>
       </nav>
     </header>
   );

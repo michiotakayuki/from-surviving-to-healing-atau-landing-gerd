@@ -105,12 +105,11 @@ export default function BookCover() {
             </div>
 
             <div>
-              <h2 className="font-display text-[26px] font-light leading-[1.12] text-paper">
-                From Surviving to Healing
+              <h2 className="font-display text-[23px] font-light leading-[1.16] text-paper">
+                Saat GERD, Gastritis, dan Colitis Datang Bersamaan
               </h2>
               <p className="mt-3 text-[12px] leading-relaxed text-paper/70">
-                Perjalanan Memutarbalikkan GERD, Gastritis, dan Colitis yang Datang
-                Bersamaan.
+                Perjalanan Pulih Setelah Berbulan-Bulan Mencari Jawaban
               </p>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-[11px] tracking-wide text-paper/75">
