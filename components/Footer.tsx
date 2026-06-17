@@ -12,8 +12,8 @@ export default function Footer() {
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-soft text-accent">
                 <Leaf className="h-[18px] w-[18px]" />
               </span>
-              <span className="font-display text-[17px] text-ink">
-                {siteConfig.brandName}
+              <span className="font-display text-[16px] leading-tight text-ink">
+                {siteConfig.productName}
               </span>
             </div>
             <p className="mt-4 text-[14px] leading-relaxed text-muted">
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-line pt-8 text-[13px] text-muted sm:flex-row">
-          <p>© {year} {siteConfig.brandName}. All rights reserved.</p>
+          <p>© {year} {siteConfig.productName}. All rights reserved.</p>
           <p>Dibuat dengan penuh harapan untuk yang sedang berjuang.</p>
         </div>
       </div>

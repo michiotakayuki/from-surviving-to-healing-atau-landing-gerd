@@ -4,7 +4,7 @@ import CtaButton from "./CtaButton";
 import { Check, Pill } from "./icons";
 
 const items = [
-  "Multivitamin yang aku gunakan selama perjalanan pemulihan",
+  "Suplemen yang aku gunakan selama perjalanan pemulihan",
   "Alasan kenapa aku memilih produk-produk tersebut",
   "Cara mengenali produk yang lebih terpercaya",
   "Daftar toko & marketplace yang menurut pengalamanku bisa diandalkan",
@@ -82,7 +82,7 @@ export default function AddOn() {
                   Bonus Add-On
                 </span>
                 <h3 className="mt-4 font-display text-[20px] leading-snug text-ink">
-                  Panduan Multivitamin &amp; Toko Terpercaya
+                  Daftar Rekomendasi Suplemen dan Toko Terpercaya
                 </h3>
                 <p className="mt-3 text-[13px] leading-relaxed text-muted">
                   Pelengkap ebook utama, dengan harga terpisah.

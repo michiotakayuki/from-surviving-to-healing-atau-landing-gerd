@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { siteConfig } from "@/lib/config";
 import { Leaf } from "./icons";
 
 const links = [
@@ -29,12 +30,12 @@ export default function Nav() {
       }`}
     >
       <nav className="container-page flex h-16 items-center justify-between">
-        <a href="#top" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-soft text-accent">
+        <a href="#top" className="flex min-w-0 items-center gap-2.5">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
             <Leaf className="h-[18px] w-[18px]" />
           </span>
-          <span className="font-display text-[17px] font-normal tracking-tight text-ink">
-            Surviving&nbsp;to&nbsp;Healing
+          <span className="line-clamp-2 max-w-[230px] font-display text-[13px] font-normal leading-tight tracking-tight text-ink sm:max-w-none sm:text-[15px]">
+            {siteConfig.productName}
           </span>
         </a>
 

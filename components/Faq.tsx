@@ -26,7 +26,7 @@ const faqs = [
     a: "Berbentuk ebook digital. Setelah pembelian, kamu bisa langsung membacanya dari HP atau laptop kapan saja.",
   },
   {
-    q: "Apakah aku harus membeli add-on multivitaminnya?",
+    q: "Apakah aku harus membeli add-on suplemennya?",
     a: "Tidak. Add-on sepenuhnya opsional. Buku sudah lengkap berdiri sendiri. Add-on hanya untuk kamu yang ingin langsung memulai tanpa repot memilih suplemen satu per satu.",
   },
 ];
