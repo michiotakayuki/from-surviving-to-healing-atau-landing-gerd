@@ -32,7 +32,7 @@ export default function Hero() {
 
           <Reveal delay={120}>
             <p className="mt-6 max-w-prose text-[17px] leading-relaxed text-ink-soft">
-              Catatan jujur tentang perjalanan bangkit dari GERD, gastritis, dan
+              Catatan jujur tentang perjalanan memutarbalikkan GERD, gastritis, dan
               colitis yang datang bersamaan &mdash; untuk kamu yang sudah lelah
               mencari arah.
             </p>
