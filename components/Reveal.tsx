@@ -38,6 +38,15 @@ export default function Reveal({
       return;
     }
 
+    // If the element is already within the viewport on mount (e.g. above the
+    // fold / hero), reveal it right away so content never stays hidden while
+    // waiting for a scroll event to trigger the observer.
+    const rect = node.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      setVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
