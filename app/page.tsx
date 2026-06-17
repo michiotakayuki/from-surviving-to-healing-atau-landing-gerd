@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
+import Emotional from "@/components/Emotional";
 import Story from "@/components/Story";
 import Benefits from "@/components/Benefits";
 import Learn from "@/components/Learn";
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <Problem />
+        <Emotional />
         <Story />
         <Benefits />
         <Learn />
